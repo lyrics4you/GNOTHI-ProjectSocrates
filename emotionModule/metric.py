@@ -76,6 +76,7 @@ class emotionMetrics:
         df_summary = self._get_summary(df_logits, intensity, rel_intensity, valence, score)        
 
         self.logits = df_logits
+        self.weights = df_weights
         self.intensity = intensity
         self.rel_intensity = rel_intensity
         self.valence = valence
